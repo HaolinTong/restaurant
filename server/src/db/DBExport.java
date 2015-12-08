@@ -38,7 +38,7 @@ public class DBExport {
 			}
 			writer.flush();
 			writer.close();
-		} catch (Exception e) { /* report an error jsdlagfjl */
+		} catch (Exception e) { /* report an error */
 			System.out.println(e.getMessage());
 		}
 	}
