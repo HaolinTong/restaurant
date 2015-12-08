@@ -20,7 +20,7 @@ public class DBExport {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		try {
 			if (conn == null) {
@@ -31,14 +31,14 @@ public class DBExport {
 			ResultSet rs = stmt.executeQuery(sql);
 			BufferedWriter writer = new BufferedWriter(new FileWriter(
 					"../dataset/review_data"));
-			
+
 			while (rs.next()) {
 				String categories = rs.getString("categories");
 				writer.write(categories + "\n");
 			}
 			writer.flush();
 			writer.close();
-		} catch (Exception e) { /* report an error */
+		} catch (Exception e) { /* report an error jsdlagfjl */
 			System.out.println(e.getMessage());
 		}
 	}
